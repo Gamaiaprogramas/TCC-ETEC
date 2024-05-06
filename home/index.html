@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <title>Economyze</title>
+    <link rel="stylesheet" href="/landingPage/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="image">
+                <h1>EYC / EYM</h1>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+        </div>
+    </header>
+    <article></article>
+    <main></main>
+    <footer></footer>
+    <!-- <div id="chartdiv"></div> -->
+</body>
+<style>
+    #chartdiv {
+      width: 100%;
+      height: 500px;
+    }
+</style>
+<script>
+    am5.ready(function() {
+    
+    // Create root element
+    // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+    var root = am5.Root.new("chartdiv");
+    
+    // Set themes
+    // https://www.amcharts.com/docs/v5/concepts/themes/
+    root.setThemes([
+      am5themes_Animated.new(root)
+    ]);
+    
+    // Create chart
+    // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+    var chart = root.container.children.push(
+      am5percent.PieChart.new(root, {
+        endAngle: 270
+      })
+    );
+    
+    // Create series
+    // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+    var series = chart.series.push(
+      am5percent.PieSeries.new(root, {
+        valueField: "value",
+        categoryField: "category",
+        endAngle: 270
+      })
+    );
+    
+    series.states.create("hidden", {
+      endAngle: -90
+    });
+    
+    // Set data
+    // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+    series.data.setAll([{
+      category: "Mercado",
+      value: 1327.0
+    }, {
+      category: "Academia",
+      value: 119.0
+    }, {
+      category: "Contas",
+      value: 1800.8
+    }, {
+      category: "creche",
+      value: 265.8
+    }, {
+      category: "lazer",
+      value: 339.9
+    }, {
+      category: "investimentos",
+      value: 500.3
+    }, {
+      category: "Saldo emergencial",
+      value: 100
+    }]);
+    
+    series.appear(1000, 100);
+    
+    }); // end am5.ready()
+    </script>
+</html>
