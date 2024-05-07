@@ -16,6 +16,7 @@ header{
     display: flex;
     background-color: #f4fcf2;
     height: 5vw;
+    min-height: 70px;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -119,6 +120,10 @@ main{
     height: 50%;
 }
 
+.container1, .container2 p{
+    font-size: 1.3vw;
+}
+
 .text{
     width: 30%;
     height: 40%;    
@@ -146,8 +151,13 @@ main{
 }
 
 .quadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 70%;
     height: 100%;
+    gap: 20px;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
@@ -155,7 +165,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
 }
-
+j
 .quadro > img{
     height: 50vh;
     width: 55vh;
@@ -169,6 +179,22 @@ main{
 
 
 
+.circle{
+    background-color: #000;
+    width: 40%;
+    min-width: 60px;
+    /* min-height: 70px; */
+    height: 30%;
+    border-radius: 50%;
+}
+
+.texto{
+    gap: 20px;
+    background-color: #f5f3f4;
+    width: 95%;
+    height: 50%;
+}
+
 
 .grafico{
     display: flex;
@@ -179,8 +205,8 @@ main{
 }
 
 #chartdiv {
-    width: 100%;
-    height: 500px;
+    width: 95%;
+    height: 30vw;
   }
 
   .footer ul{
