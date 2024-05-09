@@ -1,8 +1,26 @@
 :root{
-    --green-light-color : #38b000;
-    --green-dark-color: #004b23;
-    --green-medium-color: #007200;
+    --orange-one-color : #ff6d00;
+    --orange-two-color: #ff7900;
+    --orange-three-color:#ff8500;
+    --orange-four-color:#ff9100;
+    --orange-five-color:#ff9e00;
+    --purple-one-color: #240046;
+    --purple-two-color: #3c096c;
+    --purple-three-color: #5a189a;
+    --purple-four-color: #7b2cbf;
+    --purple-five-color: #9d4edd;
     --card-box-shadow: rgba(0, 0, 0, 0.449) 0px 5px 8px;
+
+    --malachite: #39d05cff;
+    --malachite-2: #35e95fff;
+    --emerald: #35d475ff;
+    --mint: #35ac7aff;
+    --teal: #347f83ff;
+    --yinmn-blue: #2e518aff;
+    --tekhelet: #40288fff;
+    --indigo: #5702a1ff;
+    --grape: #6500a3ff;
+    --french-violet: #8127b9ff;
 }
 
 *{
@@ -21,7 +39,7 @@ body{
 
 header{
     display: flex;
-    background-color: #f4fcf2;
+    background-color: #10002b;
     height: 5vw;
     min-height: 70px;
     width: 100%;
@@ -34,7 +52,6 @@ header{
 }
 /* Adicionei a imagem de fundo do article e tbm coloquei um testo */
 article{
-
     background-color: rgba(128, 128, 128, 0);
     height: 43.5vw; 
     display: flex;
@@ -51,16 +68,15 @@ article div{
     flex-direction: column;
     position: absolute;
     align-items: left;
-
     justify-content: space-around;
     height: 90%;
     width: 90%;
 
 }
 article > div > h1{
-    font-size: 10vh;
+    font-size: 8vh;    
     color: rgb(255, 255, 255);
-    text-shadow: rgb(144, 209, 200) 0.4vh 0.4vh 2vh;
+    text-shadow: var(--emerald) 0.4vh 0.4vh 2vh;
     text-decoration: dotted;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -82,6 +98,10 @@ main{
     width: 30%;
     height: 100%;
 }
+.logo > img{
+    border-radius: 0px;
+    height: 8vh;
+}
 
 .menu{
     height: 100%;
@@ -96,9 +116,7 @@ main{
 .image{
     border-radius: 10vh;
     height: 140%;
-
 }
-
 
 .btn{
     cursor: pointer;
@@ -109,8 +127,8 @@ main{
     display: flex;
     border-radius: 1vh;
     align-items: center;
-    background-color: var(--green-medium-color);
-    color: rgb(243, 198, 0);
+    background-color:var(--orange-one-color);
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 28px, rgba(0, 0, 0, 0.22) 5px 5px 8px;
@@ -175,6 +193,7 @@ main{
 }
 
 .quadro{
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,7 +201,7 @@ main{
     width: 70%;
     height: 100%;
     gap: 20px;
-    background-color: #fff;
+    background-color: #10002b;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
 }
@@ -206,7 +225,7 @@ main{
 .texto{
     border-radius: 10px;
     gap: 20px;
-    background-color: #fff;
+    background-color: #10002b;
     width: 95%;
     height: 50%;
     /* box-shadow: inset rgba(0, 0, 0, 0.24) 0px 0px 20px -12px;  */
@@ -220,15 +239,18 @@ main{
 }
 
 .texto h3 {
-    font-size: 25px;
-    color: #495057;
+    text-align: justify;
+    font-size: 150%;
+    color: #fff;
 }
 
 .texto h1{
+    color: var(--orange-five-color);
     font-size: 60px;
     margin-top: 10%;
 }
 .title{
+
     padding: 40px 0 0 0;
 }
 .grafico{
@@ -251,12 +273,12 @@ main{
 }
 
 .footer{
-    background-color: #080914;
+    background-color: #10002b;
     color: #fff;
 }
 
 .footer p{
-    color: #ccc;
+    color: #fff;
     max-width: 25em;
     font-size: 0.9em;
     line-height: 23px;
@@ -303,8 +325,8 @@ main{
 }
 
 .footer .menu a:hover{
-    color: #80b918;
-    border-bottom: 1px solid #80b918;
+    color: var(--orange-one-color);
+    border-bottom: 1px solid var(--orange-one-color);
 }
 
 .services-icons li,
@@ -343,7 +365,7 @@ main{
     display: flex;
     border: none;
     background: #20232a;
-    color: #ccc;
+    color: white;
 }
 
 .input-wrap input:focus{
@@ -352,7 +374,7 @@ main{
 
 .input-wrap button{
     padding: .8em;
-    background-color: #80b918;
+    background-color: var(--orange-five-color);
     border: none;
     outline: none;
     color: #fff;
@@ -360,7 +382,7 @@ main{
 }
 
 .input-wrap button:hover{
-    background: #2f9300;
+    background:var(--orange-one-color);
 }
 
 .copy{
@@ -371,7 +393,7 @@ main{
 }
 
 .copy:hover{
-    color: #80b918;
+    color: var(--orange-five-color);
     user-select: none;
 }
 
