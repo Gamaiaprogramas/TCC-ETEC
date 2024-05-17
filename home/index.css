@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Titulo';
+    src: url(/fontes/good\ times\ rg.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Titulo2';
+    src: url(/fontes/Quantum.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Titulo3';
+    src: url(/fontes/MYPUMA__.TTF) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root{
     --orange-one-color : #ff6d00;
     --orange-two-color: #ff7900;
@@ -169,13 +190,19 @@ main{
     font-size: 1.3vw;
 }
 
+.title h1{
+    font-family: Titulo;
+}
+
 .text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 30%;
     height: 40%;
     font-size: 1.5vw;
 }
 
 .text2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     gap: 1vw;
     width: 30%;
     height: 40%;
@@ -184,8 +211,12 @@ main{
     align-items: center;
     flex-direction: column;
 }
+.text2 h1{
+    font-family: titulo;
+    font-size: 1.9vw;
+}
 .text2 p{
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 
 .box{
@@ -266,12 +297,13 @@ main{
 }
 
 .texto h1{
+    font-family: Titulo2;
     color: var(--orange-five-color);
     font-size: 60px;
     margin-top: 10%;
 }
 .title{
-
+    
     padding: 40px 0 0 0;
 }
 .grafico{
@@ -282,6 +314,7 @@ main{
 }
 
 .titulo h1{
+    font-family: titulo;
     font-size: 60px;
 }
 #chartdiv {
@@ -349,6 +382,13 @@ main{
     color: var(--orange-one-color);
     border-bottom: 1px solid var(--orange-one-color);
 }
+.col1 a{
+    font-family: Titulo3;
+}
+.col2 a{
+    font-family: Titulo2;
+}
+
 
 .services-icons li,
 .media-icons li{
