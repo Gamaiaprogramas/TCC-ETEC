@@ -6,3 +6,4 @@
 
 09/05 -- Guilherme e Alisson --17:08 - Modificação e estilização
 
+16/05 -- Filipe -- 21:56 - Alteração de fontes e textos
